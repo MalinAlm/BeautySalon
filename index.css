@@ -1,0 +1,453 @@
+@font-face {
+  font-family: SourceSansPro;
+  src: url("SourceSansPro-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee7e7;
+  color: black;
+  font-family: SourceSansPro, sans-serif;
+}
+
+.huvudinnehåll {
+  /*behandlingar.html */
+  background-color: white;
+  margin: 10rem;
+  padding: 1em;
+  max-width: 50%;
+  /* margin: 15rem; */
+}
+
+.prislista {
+  /* prislista.html */
+  background-color: #fbfafb;
+  margin: 10rem;
+  padding: 1em;
+  max-width: 50%;
+}
+
+#pris-mobile {
+  display: none;
+}
+
+.rubrik-lista {
+  font-size: x-large;
+}
+dd {
+  /* prislista.html */
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+
+h1 {
+  /* font-weight: 300; */
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 2rem;
+}
+
+#h1-hemsida {
+  /* index.html */
+  margin-left: 6rem;
+}
+
+dl > dt {
+  font-weight: bold;
+}
+
+#intro {
+  /* index.html */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#intro-text {
+  background-color: white;
+  /* margin: 10rem; */
+  padding: 1em;
+  max-height: 20%;
+  margin-bottom: 7rem;
+}
+
+.unicorn-nails {
+  /* bild index.html */
+  max-width: 300px;
+  height: auto;
+}
+
+#naglarunicorn-small {
+  /* bild index.html */
+  display: none;
+}
+
+#naglarunicorn-large {
+  /* bild index.html */
+  max-width: 400px;
+  height: auto;
+}
+
+#nyhetsbrev {
+  /* index.html */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  max-width: 600px;
+  margin-left: 7.5em;
+}
+
+#knapp-prenumerera {
+  /* index.html */
+  margin-left: 16px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.nav {
+  /* header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  margin-right: 10em;
+  /* nytt härifrån */
+  overflow: hidden;
+  background-color: rgb(251, 250, 251);
+}
+
+li {
+  display: inline;
+  font-size: 1em;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  /* nytt härifrån */
+  float: left;
+}
+
+li a {
+  /* nytt härifrån */
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li:hover {
+  /* alla sidor " meny" */
+  background-color: rgb(250, 243, 240);
+}
+
+#logo {
+  max-width: 200px;
+  height: auto;
+  margin-left: 3em;
+}
+
+.galleri {
+  /*galleri.html */
+  flex-wrap: wrap;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  /* width: 100%; */
+  max-width: 300px;
+  height: auto;
+  margin: 3em 3em;
+  /* padding: 0%; */
+}
+
+p {
+  margin: 1em 1em;
+  /* max-width: 700px; */
+  max-width: 75ch;
+  /* text-align: justify; */
+}
+
+#recension-container {
+  /* omdöme.html */
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-height: 300px;
+}
+
+.omdöme {
+  /* omdöme.html */
+  text-align: center;
+}
+
+.recension-quote,
+.recension-bokadirekt {
+  margin-left: 4.5em;
+}
+
+#kontakt-flex {
+  /* kontakt.html */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#kontaktform {
+  /* kontakt.html */
+  display: grid;
+  gap: 0.2em;
+  grid-template-areas:
+    "namn meddelande"
+    "epost meddelande"
+    "mobil meddelande"
+    "utfyllnad skicka";
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  max-height: 300px;
+}
+#namn {
+  /* kontakt.html */
+  grid-area: namn;
+}
+#epost {
+  /* kontakt.html */
+  grid-area: epost;
+}
+#mobil {
+  /* kontakt.html */
+  grid-area: mobil;
+}
+#meddelande-ruta {
+  /* kontakt.html */
+  grid-area: meddelande;
+}
+#skicka {
+  /* kontakt.html */
+  grid-area: skicka;
+}
+
+.kontakt {
+  /* kontakt.html */
+  padding: 0.5em 0.5em;
+  margin: 0.5em 0.5em;
+}
+
+#hitta-hit {
+  /* kontakt.html */
+  text-align: left;
+  max-width: 400px;
+}
+
+@media (max-width: 820px) {
+  /* (max-width:600px)  */
+
+  .huvudinnehåll {
+    /*behandlingar.html */
+    margin: 5rem;
+  }
+
+  ul {
+    list-style: none;
+    margin-right: 10em;
+  }
+  li {
+    display: block;
+    /* nytt härifrån */
+    float: none;
+  }
+  #logo {
+    max-width: 200px;
+    height: auto;
+    margin-left: 1em;
+  }
+
+  #h1-hemsida {
+    margin-left: 1rem;
+  }
+
+  .bilder-glleri {
+    /* galleri.html */
+    max-width: 300px;
+    height: auto;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+  }
+
+  .galleri {
+    /* galleri.html */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #intro {
+    /* index.html */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #naglarunicorn-small {
+    /* bild index.html */
+    max-width: 300px;
+    height: auto;
+    display: block;
+  }
+
+  #naglarunicorn-large {
+    /* bild index.html */
+    display: none;
+  }
+
+  #recension-container {
+    /* omdöme.html */
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-height: 300px;
+    /* grid-row: auto; */
+  }
+
+  .recension-quote,
+  .recension-bokadirekt {
+    /* omdöme.html */
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  #nyhetsbrev {
+    /* index.html */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    max-width: 600px;
+    margin: 1em 1em;
+  }
+
+  #pris-mobile {
+    background-color: #fbfafb;
+    display: block;
+    text-align: center;
+  }
+  dl {
+    margin: 0;
+    display: none;
+  }
+  /* dt >  {
+
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: center;
+  } */
+
+  dd {
+    /* prislista.html */
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .huvudinnehåll {
+    /*behandlingar.html */
+    margin: 1em;
+    padding-right: 4.25em;
+    padding-left: 4.25em;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  #logo {
+    max-width: 200px;
+    height: auto;
+    margin-left: 32px;
+  }
+
+  h1 {
+    /* font-weight: 300; */
+    text-align: center;
+    margin-right: 32px;
+  }
+  ul {
+    list-style: none;
+    margin: 1em;
+  }
+
+  li {
+    display: block;
+    /* nytt härifrån */
+    float: none;
+  }
+  #logo {
+    max-width: 200px;
+    height: auto;
+    /* margin-left: auto; */
+  }
+  #naglarunicorn-small {
+    /* bild index.html */
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  .prislista {
+    /* prislista.html */
+    background-color: #fbfafb;
+    margin: 0;
+    padding: 1em;
+  }
+
+  .bilder-glleri {
+    margin: 0.2em;
+  }
+
+  #kontaktform {
+    /* kontakt.html */
+    display: grid;
+    gap: 0.2em;
+    grid-template-areas:
+      "namn"
+      "epost"
+      "mobil"
+      "meddelande"
+      "skicka";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-height: 300px;
+  }
+
+  #hitta-oss {
+    text-align: center;
+    margin: 2em;
+  }
+  #hitta-hit {
+    /* kontakt.html */
+    text-align: center;
+    max-width: 400px;
+  }
+}

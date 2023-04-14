@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <meta
+      name="description"
+      content="Här hittar ni kontaktuppgifter till salongen."
+    />
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html"
+        ><img
+          id="logo"
+          src="./logga/shape-esthetic-black.png"
+          alt="Logo Shape Esthetic"
+      /></a>
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+        <li><a href="behandlingar.html"> Behandlingar</a></li>
+        <li><a href="omdömen.html">Omdömen</a></li>
+        <li><a href="prislista.html">Prislista</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Kontakt</h1>
+      <p>Skriv till oss:</p>
+      <div id="kontakt-flex">
+        <form id="kontaktform" action="submit.php" method="POST">
+          <input id="namn" type="text" placeholder="Namn" class="kontakt" />
+          <input id="epost" type="text" placeholder="Email" class="kontakt" />
+          <input
+            id="mobil"
+            type="text"
+            placeholder="Mobilnummer"
+            class="kontakt"
+          />
+          <textarea
+            name="Meddelande"
+            placeholder="Meddelande"
+            id="meddelande-ruta"
+            cols="40"
+            rows="4"
+            class="kontakt"
+          ></textarea>
+          <input id="skicka" type="submit" value="Skicka" />
+        </form>
+        <div id="hitta-oss">
+          <h2>Hitta hit</h2>
+          <p id="hitta-hit">
+            Salongen ligger på Engelbrektsgatan 48 i Göteborg. Närmsta hållplats
+            är Scandinavium och betalparkering finns utanför salongen.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
